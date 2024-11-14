@@ -7,11 +7,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 export function AlmanaqueContent() {
   const previewData = [
-    { player_a: "Aurelia Bustos", goals_team_a: 2, goals_team_b: 0, player_b: "Raúl Cortina" },
-    { player_a: "Playtomic", goals_team_a: 2, goals_team_b: 1, player_b: "Juán Gil Miqueo" },
-    { player_a: "Manuel Recena", goals_team_a: 1, goals_team_b: 2, player_b: "Fátima Ballesteros" },
-    { player_a: "Holafly", goals_team_a: 3, goals_team_b: 1, player_b: "Guillermo Montoya" },
-    { player_a: "Félix López", goals_team_a: 2, goals_team_b: 2, player_b: "Álvaro Amor" },
+    { player_a: "Cris Busquets", sets_team_a: 1, sets_team_b: 1, player_b: "Sngular" },
+    { player_a: "Daniel Sanchez-Crespo", sets_team_a: 2, sets_team_b: 3, player_b: "Tinybird" },
+    { player_a: "Félix López", sets_team_a: 2, sets_team_b: 1, player_b: "Extramile Cloud" },
+    { player_a: "David Bonilla", sets_team_a: 3, sets_team_b: 3, player_b: "Juan Gil Miqueo" },
+    { player_a: "Toño de la Torre", sets_team_a: 0, sets_team_b: 2, player_b: "Roberto Canales" },
   ]
 
   return (
@@ -36,14 +36,14 @@ export function AlmanaqueContent() {
           <section className="bg-blue-800 shadow-lg rounded-lg p-6 border-2 border-yellow-400">
             <h2 className="text-3xl font-semibold text-yellow-400 mb-4">La Misión</h2>
             <p className="text-white mb-4">
-              Biff tiene el Almanaque Deportivo del futuro donde aparecen los resultados de los partidos de fútbol entre los <Link
+              Biff tiene el Almanaque Deportivo del futuro donde aparecen los resultados de los partidos de pádel entre los <Link
                 href="https://www.trgcon.com/#patrocinio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 hover:underline ml-1"
               >
-                patrocinadores, speakers, y mecenas de la trg24
-              </Link>  —puntuaciones de fútbol, con pádel se complicaba el tema— ¡pero le falta la página de clasificación! Necesita tu ayuda para completar la información y hacer historia.
+                patrocinadores, speakers, y mecenas de la TRGCON24
+              </Link> ¡pero le falta la página de clasificación! Necesita tu ayuda para completar la información y hacer historia.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
 
@@ -63,8 +63,8 @@ export function AlmanaqueContent() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="text-yellow-400">Jugador A</TableHead>
-                    <TableHead className="text-yellow-400">Goles A</TableHead>
-                    <TableHead className="text-yellow-400">Goles B</TableHead>
+                    <TableHead className="text-yellow-400">Sets Jugador A</TableHead>
+                    <TableHead className="text-yellow-400">Sets Jugador B</TableHead>
                     <TableHead className="text-yellow-400">Jugador B</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -72,18 +72,20 @@ export function AlmanaqueContent() {
                   {previewData.map((row, index) => (
                     <TableRow key={index}>
                       <TableCell className="text-white">{row.player_a}</TableCell>
-                      <TableCell className="text-white">{row.goals_team_a}</TableCell>
-                      <TableCell className="text-white">{row.goals_team_b}</TableCell>
+                      <TableCell className="text-white">{row.sets_team_a}</TableCell>
+                      <TableCell className="text-white">{row.sets_team_b}</TableCell>
                       <TableCell className="text-white">{row.player_b}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
               </Table>
             </div>
+            <p className="text-white mt-4  italic"> Los partidos son a 10 minutos, que la pista está muy cotizada. Por eso puede haber empates.
+            </p>
             <p className="text-white mt-4">
               Puedes ver todos los datos aquí:
               <Link
-                href="https://storage.googleapis.com/trg24-matches/partidos_tarugo24.csv"
+                href="https://storage.googleapis.com/trg24-matches/partidos_trgcon24.csv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 hover:underline ml-1"
