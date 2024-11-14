@@ -99,51 +99,62 @@ export function AlmanaqueContent() {
             <h2 className="text-3xl font-semibold text-yellow-400 mb-4">¿Cómo puedes ayudar?</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-medium text-red-500 mb-2">Regístrate en
-                    <Link href="https://tinybird.co/">
-                      Tinybird
-                    </Link>
+                <h3 className="text-xl font-medium text-red-500 mb-2">
+                  Regístrate en Tinybird
                 </h3>
                 <p className="text-white">
-                  Crea tu cuenta, un workspace y sube el <Link
+                  <Link
+                    href="https://app.tinybird.co/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-yellow-400 hover:underline ml-1"
+                  >
+                    Crea tu cuenta, un workspace
+                  </Link> y
+
+                  sube el <Link
                     href="https://storage.googleapis.com/trg24-matches/partidos_trgcon24.csv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-yellow-400 hover:underline ml-1"
                   >
-                    CSV con los resultados
+                    CSV con los resultados de los partidos.
                   </Link>
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-medium text-red-500 mb-2">Consulta el Almanaque</h3>
                 <p className="text-white">
-                  Revisa los datos del Almanaque y, sabiendo que los partidos ganados suman 3 puntos, los empatados 1, y los perdidos 0, calcula la clasificación de la Liga Tarugo 24 usand un <Link
+                  Revisa los datos del Almanaque y, sabiendo que los partidos ganados suman 3 puntos, los empatados 1, y los perdidos 0, calcula la clasificación de la Liga Tarugo 24 usando <Link
                     href="https://www.tinybird.co/docs/concepts/pipes"
+                    className="text-yellow-400 hover:underline ml-1"
+
                   >
-                    Pipe
+                    Pipes en tu Workspace de Tinybird.
                   </Link>
-                  en tu Workspace de Tinybird.
+                </p>
+                <p className="mt-2">
+                  Tendrás que publicar API Endpoints que resulevan una serie de preguntas que verás en el formulario de más abajo.
                 </p>
               </div>
             </div>
             <div>
-                <h3 className="text-xl font-medium text-red-500 mb-2">Completa la información</h3>
-                <p className="text-white">
-                  Tendrás que adjuntar la URL generada del Endpoint de Tinybird publicado, incluyento el token de acceso.
-                </p>
-                <Button
-                  asChild
-                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+              <h3 className="text-xl font-medium text-red-500 mt-4 mb-2">Completa la información</h3>
+              <p className="text-white">
+                Tendrás que adjuntar las URLs generadas de los API Endpoints de Tinybird publicados, incluyento los tokens de acceso.
+              </p>
+              <Button
+                asChild
+                className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mt-4"
+              >
+                <Link
+                  href="https://forms.gle/ABbcyaCDx2f3mQBu5"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Link
-                    href="https://forms.gle/ABbcyaCDx2f3mQBu5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Enviar datos de clasificación
-                  </Link>
-                </Button>
+                  Enviar datos de clasificación
+                </Link>
+              </Button>
             </div>
           </section>
 
