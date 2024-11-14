@@ -47,8 +47,16 @@ export function AlmanaqueContent() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
 
-              <div className="w-full sm:w-1/2 aspect-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2DE-de5d1Wk?si=kXIFGg54Ubtm_-rV" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="rounded-md border-2 border-red-500"></iframe>
+              <div className="w-full sm:w-1/2 aspect-video relative">
+                <iframe 
+                  src="https://www.youtube.com/embed/2DE-de5d1Wk?si=kXIFGg54Ubtm_-rV" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen 
+                  className="absolute top-0 left-0 w-full h-full rounded-md border-2 border-red-500"
+                ></iframe>
               </div>
             </div>
           </section>
