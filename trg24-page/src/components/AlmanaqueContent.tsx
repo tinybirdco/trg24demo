@@ -48,13 +48,13 @@ export function AlmanaqueContent() {
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
 
               <div className="w-full sm:w-1/2 aspect-video relative">
-                <iframe 
-                  src="https://www.youtube.com/embed/2DE-de5d1Wk?si=kXIFGg54Ubtm_-rV" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen 
+                <iframe
+                  src="https://www.youtube.com/embed/2DE-de5d1Wk?si=kXIFGg54Ubtm_-rV"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                   className="absolute top-0 left-0 w-full h-full rounded-md border-2 border-red-500"
                 ></iframe>
               </div>
@@ -142,7 +142,7 @@ export function AlmanaqueContent() {
                   </Link>
                 </p>
                 <p className="mt-2">
-                  Tendrás que publicar API Endpoints que resulevan una serie de preguntas que verás en el formulario de más abajo.
+                  Tendrás que publicar API Endpoints que resuelvan una serie de preguntas que verás en el formulario de más abajo.
                 </p>
               </div>
             </div>
@@ -164,6 +164,16 @@ export function AlmanaqueContent() {
                 </Link>
               </Button>
             </div>
+          </section>
+
+          <section className="bg-blue-800 shadow-lg rounded-lg p-6 border-2 border-yellow-400">
+            <h2 className="text-3xl font-semibold text-yellow-400 mb-4">¿Cómo sabes si has ganado?</h2>
+            <p className="text-white mb-4">
+              El viernes 22 anunciaremos el ganador en Twitter y LinkedIn entre todos los que acierten.
+            </p>
+            <p className="text-white mb-4">
+              Y, por supuesto, te mandamos email.
+            </p>
           </section>
 
           <section className="bg-blue-800 shadow-lg rounded-lg p-6 border-2 border-yellow-400">
